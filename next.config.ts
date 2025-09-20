@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
         destination:
           "https://eisvdiypdhqebatccxpr.supabase.co/storage/v1/object/public/venue-platform-media-public-dev/:path*",
       },
+      {
+        source: "/bli-medlem",
+        destination:
+          "/p/bli-medlem",
+      },
     ];
   },
 };
