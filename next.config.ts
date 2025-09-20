@@ -22,9 +22,9 @@ const nextConfig: NextConfig = {
           "https://eisvdiypdhqebatccxpr.supabase.co/storage/v1/object/public/venue-platform-media-public-dev/:path*",
       },
       {
-        source: "/bli-medlem",
+        source: "/medlemskap",
         destination:
-          "/p/bli-medlem",
+          "/p/medlemskap",
       },
     ];
   },
