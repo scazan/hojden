@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "title": "Config",
+  "properties": {
+    "themeId": {
+      "type": "string",
+      "enum": [
+        "default",
+        "space",
+        "larry",
+        "darkGold",
+        "hojden",
+        "ahmed",
+        "frim",
+        "kvast",
+        "bronze",
+        "queen",
+        "moss",
+        "slate",
+        "hotPink",
+        "helloDarkness",
+        "goldenCircle1",
+        "goldenCircle2",
+        "newLand",
+        "hundredK",
+        "silverGrey1",
+        "silverGrey2",
+        "darkGrey1",
+        "eroPink",
+        "blackOnWhite",
+        "darkGreyCM"
+      ],
+      "default": "default",
+      "title": "Theme"
+    },
+    "fontName": {
+      "type": "string",
+      "enum": [
+        "default",
+        "custom",
+        "abel",
+        "outfit",
+        "Schibsted_Grotesk",
+        "Hanken_Grotesk",
+        "Young_Serif",
+        "Gothic_A1",
+        "jost",
+        "IBM_Plex_Mono",
+        "EB_Garamond",
+        "Karla",
+        "Courier",
+        "Kosugi_Maru",
+        "Special_Elite",
+        "Inter",
+        "Atkinson_Hyperlegible_Next",
+        "Oswald",
+        "Work_Sans",
+        "Open_Sans"
+      ],
+      "default": "jost",
+      "title": "Font"
+    },
+    "showSearch": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows users to search your website",
+      "title": "Enable Search"
+    },
+    "showLogin": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows users to login to your website",
+      "title": "Enable Login"
+    },
+    "showHeroImage": {
+      "type": "boolean",
+      "default": false,
+      "description": "Shows your hero image on the home page",
+      "title": "Show Hero Image"
+    },
+    "noHeroOverlay": {
+      "type": "boolean",
+      "default": false,
+      "description": "Removes the opacity overlay",
+      "title": "Remove Hero Opacity Overlay"
+    }
+  }
+}

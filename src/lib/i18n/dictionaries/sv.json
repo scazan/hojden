@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "search": "Sök",
+    "menu": "Meny"
+  },
+  "events": {
+    "upcoming_events": "Kommande evenemang",
+    "past_events": "Tidigare evenemang",
+    "see_all_upcoming_events": "se alla kommande evenemang",
+    "events": "Evenemang"
+  }
+}

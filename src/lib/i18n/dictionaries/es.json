@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "search": "Buscar",
+    "menu": "Menú"
+  },
+  "events": {
+    "upcoming_events": "Próximos Eventos",
+    "past_events": "Eventos Pasados",
+    "see_all_upcoming_events": "ver todos los próximos eventos",
+    "events": "Eventos"
+  }
+}
