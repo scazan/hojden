@@ -20,11 +20,15 @@ export const ProfileCompact = ({ profile }: { profile: VenueProfile }) => {
         <Link href={`/artists/${profile.slug}`}>{content.title}</Link>
       </div>
 
-      <VenueContent
-        className="flex flex-col gap-6 pr-4"
-        content={content}
-        contentStyles={renderedStyles}
-      />
+      {content.shortContent ? (
+        <div className="flex flex-col gap-6 pr-4">{content.shortContent}</div>
+      ) : (
+        <VenueContent
+          className="flex flex-col gap-6 pr-4"
+          content={content}
+          contentStyles={renderedStyles}
+        />
+      )}
     </div>
   );
 };
