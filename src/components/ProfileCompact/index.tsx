@@ -20,7 +20,7 @@ export const ProfileCompact = ({ profile }: { profile: VenueProfile }) => {
         <Link href={`/artists/${profile.slug}`}>{content.title}</Link>
       </div>
 
-      {content.shortContent ? (
+      {content.shortContent && content.shortContent?.length > 0 ? (
         <div className="flex flex-col gap-6 pr-4">{content.shortContent}</div>
       ) : (
         <VenueContent
