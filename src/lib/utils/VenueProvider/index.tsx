@@ -1,6 +1,6 @@
 "use client";
 
-import { Site, getSite, setConfig } from "@venuecms/sdk";
+import { Site, getSite } from "@venuecms/sdk";
 import { ReactNode, createContext, useEffect, useState } from "react";
 
 export const VenueContext = createContext<Site | undefined>(undefined);
@@ -16,11 +16,6 @@ export const VenueProvider = ({
   const [instance, setInstance] = useState<Site | undefined>();
 
   useEffect(() => {
-    setConfig({
-      siteKey,
-      options: { baseUrl: "/", next: { revalidate: 60 } },
-    });
-
     getSite().then(({ data }) => setInstance(data));
   }, [siteKey]);
 

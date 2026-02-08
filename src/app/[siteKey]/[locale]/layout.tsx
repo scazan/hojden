@@ -14,13 +14,13 @@ import {
   Jost,
   Karla,
   Kosugi_Maru,
+  Open_Sans,
   Oswald,
   Outfit,
   Schibsted_Grotesk,
   Special_Elite,
   Work_Sans,
   Young_Serif,
-  Open_Sans,
 } from "next/font/google";
 import { notFound } from "next/navigation";
 
@@ -33,8 +33,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { setupSSR } from "@/components/utils";
 
 import "../../globals.css";
-
-export const runtime = "edge";
 
 const WorkSans = Work_Sans({
   subsets: ["latin"],
@@ -158,6 +156,13 @@ const ThemeFonts = {
   default: SchibstedGrotesk.style,
   custom: { fontFamily: "custom" },
 };
+
+export async function generateStaticParams() {
+  return [
+    { siteKey: process.env.VENUE_SITE_KEY!, locale: "en" },
+    { siteKey: process.env.VENUE_SITE_KEY!, locale: "sv" },
+  ];
+}
 
 const RootLayout = async ({
   children,
